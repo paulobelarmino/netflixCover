@@ -1,0 +1,122 @@
+/* Para declarar uma vairiável dentro do CSS, coloca-se dentro do elemento root */
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+    --cinza: #AAA;
+    --cinza_hover: rgb(124, 121, 121);
+    --branco: #fff;
+}
+
+*{
+   margin: 0;
+   padding: 0%;
+   box-sizing: border-box; /*  limite passa ser a borda da caixa, não sobrepode */
+
+}
+
+body{ 
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--branco);
+   
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* trabalha o alinhamento vertical  */
+    justify-content: space-between; /* trabalha o alinhamento horizontal entre tags */  
+
+}
+
+header .logo{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: var(--vermelho);
+    font-family: "Arial Brack", Times, serif;
+    font-size: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--cinza);
+    margin-right: 10px;
+    font-size: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+header nav a:hover{
+    color: var(--cinza_hover);
+
+}
+
+.indicacao_principal{
+    font-size: 14px;
+    background: linear-gradient(rgba(0,0,0,50%),rgba(0,0,0,50%)100%), url("https://www.themoviedb.org/t/p/original/iyG7XgW7jY879pvOrVJiR84zse2.jpg");
+    height: 400px;
+    background-size:cover;
+
+}
+
+.container-principal{
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.container-principal h3{
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+
+.container-principal p{
+    margin-bottom: 50px; 
+    margin-left: 25px;
+}
+
+
+.container-principal .botao1{
+    margin-left: 25px;
+    padding: 10px 20px;
+    border: 2px solid var(--preto);
+    border-radius: 5px;
+    
+}
+
+.container-principal .botao1:hover{
+    background-color: var(--cinza);
+    cursor: pointer;
+}
+
+.container-principal .botao2{
+    margin-left: 10px;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 0px;
+    background-color: var(--cinza_hover);
+    color: var(--branco);
+    
+}
+
+.container-principal    .botao2:hover{
+    background-color: var(--cinza);
+    cursor: pointer;
+}
+
+.box-filme{
+    height: 50%;
+    width: 50%;
+   /*  display: block; */
+}
+
+.subTitulos{
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
